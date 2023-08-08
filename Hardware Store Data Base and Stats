@@ -1,0 +1,23 @@
+CREATE TABLE Fasteners (Name TEXT PRIMARY KEY, Bin INTEGER, Aisle INTEGER, Inches INTEGER, Thread INTEGER, Amount INTEGER, Price INTEGER);
+INSERT INTO Fasteners VALUES ("Cap Bolt", 1, 1, 2, 20, 55, 73);
+INSERT INTO Fasteners VALUES ("Wood Screw", 2, 2, 5, 32, 36, 23);
+INSERT INTO Fasteners VALUES ("Machine Screw", 3, 1, 10, 32, 12, 88);
+INSERT INTO Fasteners VALUES ("Bolt", 4, 7, 1, 18, 23, 25);
+INSERT INTO Fasteners VALUES ("U Bolt", 5 ,7, 8, 13, 76, 99);
+INSERT INTO Fasteners VALUES ("Eye Bolt", 9, 1, 4, 16, 34, 23);
+INSERT INTO Fasteners VALUES ("Carage Bolt", 3, 5, 1, 14, 10, 55);
+INSERT INTO Fasteners VALUES ("Anchor Bolt", 11, 24, 7-1/2, 20, 2, 6);
+INSERT INTO Fasteners VALUES ("Square Head Bolt", 55, 12, 16, 18, 15, 1);
+INSERT INTO Fasteners VALUES ("Socket Head Bolt", 84, 25, 3, 48, 46, 12);
+INSERT INTO Fasteners VALUES ("Toggle Bolt", 69, 7, 2-1/2, 20, 7, 22);
+INSERT INTO Fasteners VALUES ("Countersunk Bolt", 33, 17, 2, 12, 99, 8);
+INSERT INTO Fasteners VALUES ("Pentahead Bolt", 96, 7, 1/2, 80, 41, 18);
+INSERT INTO Fasteners VALUES ("Step Bolt", 28, 8, 6, 24, 72, 1);
+INSERT INTO Fasteners VALUES ("Flange Bolt", 38, 4, 19, 16, 9, 65);
+SELECT * FROM Fasteners;
+
+--display the database ordered by price 
+SELECT * FROM Fasteners ORDER BY Price;
+
+--display the database ordered by Thread
+SELECT * FROM Fasteners ORDER BY Thread;
